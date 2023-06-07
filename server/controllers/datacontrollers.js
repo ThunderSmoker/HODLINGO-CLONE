@@ -3,7 +3,7 @@ const getdata = async(req, res) => {
     try {
         const query = 'SELECT * FROM tickers';
         const { rows } = await db.query(query);
-    
+        console.log(rows);
         res.render('tickers', { tickers: rows });
       } catch (err) {
         console.error(err);

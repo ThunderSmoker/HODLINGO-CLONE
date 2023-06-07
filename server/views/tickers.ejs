@@ -107,6 +107,7 @@
             <th>Last</th>
             <th>Buy / Sell Price</th>
             <th>volume</th>
+      
             <th style="border-radius: 10px 0 0 10px;">base_unit</th>
           </tr>
         </thead>
@@ -119,6 +120,7 @@
             <td>₹<%= ticker.last %></td>
             <td>₹<%= ticker.buy %>/₹<%= ticker.sell %></td>
             <td><%= ticker.volume %></td>
+           
             <td style="border-radius: 0 10px 10px 0;"><%= ticker.base_unit %></td>
           </tr>
           <% count++; %> <% } %>
